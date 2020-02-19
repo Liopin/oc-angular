@@ -9,6 +9,10 @@ export class AppComponent {
   isAuth = false;
   title = 'OC-angular';
 
+  appareilOne = 'Machine à laver';
+  appareilTwo = 'Frigo';
+  appareilThree = 'Ordinateur';
+
   constructor(){
     setTimeout(
       ()=> {
@@ -16,9 +20,8 @@ export class AppComponent {
       }, 4000
     )
   }
-
-  onAllumer() {
+  onAllumer(){
     console.log('On allume tout');
   }
-
 }
+
