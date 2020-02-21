@@ -13,6 +13,23 @@ export class AppComponent {
   appareilTwo = 'Frigo';
   appareilThree = 'Ordinateur';
 
+
+appareils = [
+    {
+    name: 'Machine à laver',
+    status: 'éteint'
+  },
+  {
+    name: 'Frigo',
+    status: 'allumé'
+  },
+  {
+    name: 'Ordinateur',
+    status: 'allumé'
+  },
+];
+
+
   constructor(){
     setTimeout(
       ()=> {
@@ -20,6 +37,7 @@ export class AppComponent {
       }, 4000
     )
   }
+
   onAllumer(){
     console.log('On allume tout');
   }
